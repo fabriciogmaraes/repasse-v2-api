@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "906a4e92-b96b-4b3c-818b-1eb1af805af8",
+    "name": "Veiculos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49829509",
+    "_collection_link": "https://go.postman.co/collection/49829509-906a4e92-b96b-4b3c-818b-1eb1af805af8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/veiculos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"modelo\": \"Volkswagen Fox 2016\",\r\n  \"valorFipe\": 45000.0,\r\n  \"valorAnuncio\": 42000.0,\r\n  \"lojaId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/veiculos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "veiculos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/api/veiculos/oportunidades",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/veiculos/oportunidades",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "veiculos",
+            "oportunidades"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
